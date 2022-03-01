@@ -12,7 +12,6 @@ A flutter plugin to launch UPI payment applications on Android and iOS towards m
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'
-  s.dependency 'zupi-pod'
-  s.platform = :ios, '10.0'
+  s.ios.deployment_target = '8.0'
 
 end

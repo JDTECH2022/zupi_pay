@@ -1,0 +1,30 @@
+name: zupi
+description: A new Flutter package project for upi payments non Sound null safety.
+version: 0.0.2
+
+homepage: https://github.com/JDTECH2022/zupi_pay
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  universal_io: ^1.0.2
+  decimal: ^0.3.5    
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.jd.zupi_pay
+        pluginClass: UpiPayPlugin
+      ios:
+        pluginClass: UpiPayPlugin
+  assets:
+    - assets/apps/ios/
